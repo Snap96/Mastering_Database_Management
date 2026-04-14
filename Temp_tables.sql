@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 CREATE TABLE [AdventureWorks2019].[sales].[storenew](
 	store_id INT PRIMARY KEY IDENTITY (1,1),
 	sales INT
 )
 
+=======
+CREATE TABLE [AdventureWorks2019].[sales].[storenew](
+	store_id INT PRIMARY KEY IDENTITY (1,1),
+	sales INT
+)
+
+>>>>>>> 9161c373c74533b70f49c25b68da125c9ce48da6
 CREATE TABLE [AdventureWorks2019].[sales].[visits](
     visit_id INT PRIMARY KEY IDENTITY (1,1),
     first_name VARCHAR(50) NOT NULL,
@@ -11,11 +19,19 @@ CREATE TABLE [AdventureWorks2019].[sales].[visits](
     phone VARCHAR(20),
     store_id INT NOT NULL, 
     FOREIGN KEY(store_id) REFERENCES sales.storenew(store_id)
+<<<<<<< HEAD
 );
 
 ALTER TABLE [AdventureWorks2019].[sales].[storenew] ADD PRIMARY KEY (store_id);
 ALTER TABLE [AdventureWorks2019].[sales].[storenew] ADD CONSTRAINT 1,1 PRIMARY KEY (store_id);
 
+=======
+);
+
+ALTER TABLE [AdventureWorks2019].[sales].[storenew] ADD PRIMARY KEY (store_id);
+ALTER TABLE [AdventureWorks2019].[sales].[storenew] ADD CONSTRAINT 1,1 PRIMARY KEY (store_id);
+
+>>>>>>> 9161c373c74533b70f49c25b68da125c9ce48da6
 ALTER TABLE [AdventureWorks2019].[sales].[storenew]
 ADD CONSTRAINT PK_storenew_storeid PRIMARY KEY (store_id);
 
